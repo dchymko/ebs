@@ -6,6 +6,11 @@ function error_exit
   exit $2
 }
 
+# ch custom
+export HOME=/home/ec2-user
+echo "export home"
+# end custom
+
 #install not-installed yet app node_modules
 if [ ! -d "/var/node_modules" ]; then
   mkdir /var/node_modules ;
